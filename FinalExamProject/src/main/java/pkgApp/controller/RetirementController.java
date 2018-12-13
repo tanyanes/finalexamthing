@@ -39,7 +39,7 @@ public class RetirementController implements Initializable{
 	@FXML
 	private TextField txtMonthlySSI;
 	
-	private Retirement n = Retirement(Integer.parseInt(txtYearsToWork.getText()), Double.parseDouble(txtAnnualReturn1.getText()), Integer.parseInt(txtYearsRetired.getText()), Double.parseDouble(txtAnnualReturn2.getText()), Double.parseDouble(txtRequiredIncome.getText()), Double.parseDouble(txtMonthlySSI.getText()));
+	private Retirement n = new Retirement(Integer.parseInt(txtYearsToWork.getText()), Double.parseDouble(txtAnnualReturn1.getText()), Integer.parseInt(txtYearsRetired.getText()), Double.parseDouble(txtAnnualReturn2.getText()), Double.parseDouble(txtRequiredIncome.getText()), Double.parseDouble(txtMonthlySSI.getText()));
 
 	public RetirementApp getMainApp() {
 		return mainApp;
